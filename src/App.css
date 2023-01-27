@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Courier New';
+  src: url('./fonts/cour.ttf') format('truetype');
+}
+
+.text-courier-new {
+  font-family: 'Courier New';
+}
+
+
+
+#bg-image {
+  background-position: center;
+  background-size:contain;
+  background-image: url("./assets/sunsetwater.jpg");
+
+
+}
+
+.bg-image2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./assets/wave2.jpg");
+}
+
+.bg-image3 {
+  background-position: center;
+  background-size:cover;
+  background-image: url("./assets/wave3.jpg");
+}
+
+.rotate-15 {
+  transform: rotate(15deg);
+}
+.transform-none {
+  transform: rotate(0deg);
+}
+.my-custom-rounded{
+  border-radius: 60px;
+}
+.h-48 {
+  height: 48px; /* Hauteur de votre navbar */
+}
+
+.bg-white {
+  background-color: white; /* Couleur de fond de votre navbar */
+}
+
+nav {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* pour s'assurer que la navbar est au-dessus des autres éléments */
+}
+
+@media (min-width: 768px) {
+  .w-48 {
+    width: 48px; /* Largeur de votre navbar sur les écrans de grande taille */
+  }
+}
+
