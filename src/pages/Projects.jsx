@@ -33,7 +33,7 @@ function Projects() {
               En savoir plus
             </a>
             <a
-              href="https://musical-ganache-813abc.netlify.app/"
+              href="https://github.com/ChaiDaryl/Project_Samourai"
               className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
             >
               GitHub du projet
@@ -51,13 +51,13 @@ function Projects() {
             </p>{" "}
             <img src={wot} alt="" className="w-16 h-16 mx-auto bg-white " />
             <a
-              href="https://github.com/"
+              href="https://github.com/WildCodeSchool/P2_Wild-On-Track_Lyon-React-Sept-2022"
               className="inline-block px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80  animate-pulse "
             >
               En savoir plus
             </a>
             <a
-              href="https://musical-ganache-813abc.netlify.app/"
+              href="https://github.com/WildCodeSchool/P2_Wild-On-Track_Lyon-React-Sept-2022"
               className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-xl md:hover:bg-green-500/80 animate-pulse"
             >
               GitHub du projet
@@ -69,17 +69,19 @@ function Projects() {
             </h3>
             <p className="text-gray-200 mb-4 md:hover:text-white">
               Projet de création de site vitrine pour La Poste - Ligne Bleue.
-              Utilisation de HTML, CSS et JavaScript.
+              Rendre accessible le numérique par l'apprentissage. Stack
+              technique : React, Tailwind, Express, MySql Authentification, user
+              & admin dashboard, fonctionnalités CRUD.
             </p>
             <img src={poste} alt="" className="w-16 h-16 mx-auto" />
             <a
-              href="https://github.com/"
+              href="https://laposte.lyon-2.wilders.dev/"
               className="inline-block px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
             >
               En savoir plus
             </a>
             <a
-              href="https://musical-ganache-813abc.netlify.app/"
+              href="https://github.com/WildCodeSchool/P3_La-Poste_Lyon_React_Sept_2022"
               className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
             >
               GitHub du projet
