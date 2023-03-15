@@ -29,6 +29,16 @@ function Projects() {
               & admin dashboard, fonctionnalités CRUD.
             </p>
             <img src={poste} alt="" className="w-16 h-16 mx-auto" />
+            <iframe
+              className="w-full h-96 my-4"
+              src="https://www.loom.com/embed/9df13ebb3b97415aa8820c9612dc9e3f"
+              title="video ligne bleue"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>
+
             <a
               href="https://laposte.lyon-2.wilders.dev/"
               className="inline-block px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
@@ -53,6 +63,15 @@ function Projects() {
               Stack technique : ReactJs, Material UI. Utilisation de 3 API.
             </p>{" "}
             <img src={wot} alt="" className="w-16 h-16 mx-auto bg-white " />
+            <iframe
+              title="video wild on track"
+              className="w-full h-96 my-4"
+              src="https://www.loom.com/embed/99d0b6c469924bec9dfb79f2f343d5c5"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>
             <a
               href="https://github.com/WildCodeSchool/P2_Wild-On-Track_Lyon-React-Sept-2022"
               className="inline-block px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80  animate-pulse "
