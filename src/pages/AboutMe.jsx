@@ -52,12 +52,20 @@ function AboutMe() {
           </div>
 
           <p className="py-6 text-center mb-24 md:text-xl text-gray-300 w-full mt-4 scale-90 transition duration-1000 ease-in-out transform hover:scale-110">
-            Je suis une personne passionnée et motivée, toujours à la recherche
-            de nouvelles expériences et de défis à relever. J'aime travailler en
-            équipe et apporter ma contribution à la réalisation de projets
-            ambitieux. En dehors du travail, je suis un passionné de sport et de
-            voyages, et j'aime passer du temps dans la nature. J'aime également
-            la littérature, la cuisine et le cinéma.
+            Après une école de commerce et un parcours professionnel ponctué
+            d'expériences variées notamment dans les achats, le management
+            commercial et l'enseignement, j'ai fait le pari de me réorienter
+            dans le développement Web en suivant une formation intensive de
+            développeur web & web mobile à la Wild Code School de Lyon.
+            Passionné par les nouvelles technologies, j'ai choisi de me
+            professionnaliser dans ce domaine. Fort de mes expériences passées,
+            je saurais allier mes anciennes compétences à mes nouvelles pour les
+            bonifier. Je suis une personne passionnée et motivée, toujours à la
+            recherche de nouvelles expériences et de défis à relever. J'aime
+            travailler en équipe et apporter ma contribution à la réalisation de
+            projets ambitieux. En dehors du travail, je suis un passionné de
+            sport et de voyages, et j'aime passer du temps dans la nature.
+            J'aime également la littérature, la cuisine et le cinéma.
           </p>
         </div>
       </section>
