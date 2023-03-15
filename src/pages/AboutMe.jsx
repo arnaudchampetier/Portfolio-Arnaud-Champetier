@@ -56,16 +56,20 @@ function AboutMe() {
             d'expériences variées notamment dans les achats, le management
             commercial et l'enseignement, j'ai fait le pari de me réorienter
             dans le développement Web en suivant une formation intensive de
-            développeur web & web mobile à la Wild Code School de Lyon.
+            développeur web & web mobile à la Wild Code School de Lyon.{" "}
+            <br></br> <br></br>
             Passionné par les nouvelles technologies, j'ai choisi de me
             professionnaliser dans ce domaine. Fort de mes expériences passées,
             je saurais allier mes anciennes compétences à mes nouvelles pour les
-            bonifier. Je suis une personne passionnée et motivée, toujours à la
+            bonifier. <br></br>
+            <br></br>Je suis une personne passionnée et motivée, toujours à la
             recherche de nouvelles expériences et de défis à relever. J'aime
             travailler en équipe et apporter ma contribution à la réalisation de
-            projets ambitieux. En dehors du travail, je suis un passionné de
-            sport et de voyages, et j'aime passer du temps dans la nature.
-            J'aime également la littérature, la cuisine et le cinéma.
+            projets ambitieux.
+            <br></br>
+            <br></br> En dehors du travail, je suis un passionné de sport et de
+            voyages, et j'aime passer du temps dans la nature. J'aime également
+            la littérature, la cuisine et le cinéma.
           </p>
         </div>
       </section>
