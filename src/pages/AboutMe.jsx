@@ -1,6 +1,6 @@
 import React from "react";
 import wave2 from "../assets/blueplane.jpg";
-import pic from "../assets/avatarprofilpic.png";
+import pic from "../assets/profilepic3-removebg-preview.png";
 
 function AboutMe() {
   return (
@@ -16,10 +16,10 @@ function AboutMe() {
       </h1>
       <img
         src={pic}
-        alt="Mapic"
-        className="scale-90 md:min-w-fit relative bg-white transition duration-1000 ease-in-out transform hover:scale-110 md:rotate-12 mt-6 hover:transform-none md:transform md:my-custom-rounded md:rotate-15 md:mt-48 md:hover:transform-none md:transition-transform md:duration-1000 mx-auto rounded-full my-custom-rounded w-2/5 md:w-1/5 h-1/2 object-cover mb-8 md:float-left md:mx-auto md:my-0 md:mr-16"
-        //className="transform my-custom-rounded rotate-15 hover:transform-none rounded-lg w-full object-cover h-full transition-transform duration-1000"
+        alt="Ma pic"
+        className="scale-90 md:min-w-fit relative bg-white transition duration-1000 ease-in-out transform hover:scale-110 md:rotate-12 mt-6 hover:transform-none md:transform md:my-custom-rounded md:rotate-15 md:mt-48 md:hover:transform-none md:transition-transform md:duration-1000 mx-auto rounded-full my-custom-rounded w-2/5 md:w-1/6 lg:w-1/6 h-1/2 object-cover mb-8 md:float-left md:mx-auto md:my-0 md:mr-16"
       />
+
       <section className="w-2/3 flex flex-col items-center p-6 text-center md:w-1/2 md:float-right md:mx-auto md:my-0 md:ml-16">
         <div className="w-full">
           <div className="bg-gray-700 md:min-w-fit animate-pulse md:mt-48 md:mx-auto  md:w-1/4 rounded-xl md:my-custom-rounded p-4 hover:bg-gray-800/40 w-full scale-90 transition duration-1000 ease-in-out transform hover:scale-110">
@@ -67,9 +67,10 @@ function AboutMe() {
             travailler en équipe et apporter ma contribution à la réalisation de
             projets ambitieux.
             <br></br>
-            <br></br> En dehors du travail, je suis un passionné de sport et de
-            voyages, et j'aime passer du temps dans la nature. J'aime également
-            la littérature, la cuisine et le cinéma.
+            <br></br> En dehors du travail, je suis un passionné de sport
+            (surtout de football et de l'Olympique Lyonnais!) et de voyages, et
+            j'aime passer du temps dans la nature. J'aime également la
+            littérature, la cuisine et le cinéma.
           </p>
         </div>
       </section>
