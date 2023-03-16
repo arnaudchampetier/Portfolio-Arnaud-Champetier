@@ -1,13 +1,9 @@
 import React from "react";
-import wave2 from "../assets/blueplane.jpg";
 import pic from "../assets/profilepic3-removebg-preview.png";
 
 function AboutMe() {
   return (
-    <div
-      className="h-screen w-full flex flex-col items-center overflow-scroll md:bg-no-repeat md:flex-row md:items-stretch md:justify-center"
-      style={{ backgroundImage: `url(${wave2})` }}
-    >
+    <div className="h-screen w-full bg-blue-600 flex flex-col items-center overflow-scroll md:bg-no-repeat md:flex-row md:items-stretch md:justify-center">
       <h1 className="scale-90 transition duration-1000 ease-in-out transform hover:scale-105 md:text-4xl text-3xl font-bold text-gray-300 text-center mt-8 md:mt-16 md:mb-8 md:text-center md:absolute md:top-0 md:w-full">
         Qui suis-je?
       </h1>
