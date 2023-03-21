@@ -25,6 +25,10 @@ function Skills() {
       title: "Maquettage",
       list: ["Figma"],
     },
+    {
+      title: "En cours d'apprentissage",
+      list: ["PHP", "Java", "VueJs", "TypeScript", "Angular", "..."],
+    },
   ];
 
   return (
