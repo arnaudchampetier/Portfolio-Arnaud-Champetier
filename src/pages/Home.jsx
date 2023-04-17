@@ -15,9 +15,9 @@ function Home() {
             Arnaud Champetier
           </h1>
           <p className="text-xl mb-8 md:text-3xl mt-8 scale-90 transition duration-1000 ease-in-out transform text-gray-700 hover:scale-105">
-            Développeur Web junior en formation à la Wild Code School à Lyon, je
-            crée des applications web et mobiles modernes Fullstack React.js/
-            Node.js/ Express.
+            Développeur Web formé à la Wild Code School à Lyon, je crée des
+            applications web et mobiles modernes Fullstack React.js/ Node.js/
+            Express.
           </p>
           <div className="">
             <a href="https://drive.google.com/file/d/1e30kpjx0CCchR0gkSBb4ultW7Tiu9wXu/view?usp=sharing">
