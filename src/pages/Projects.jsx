@@ -19,16 +19,23 @@ function Projects() {
             Projets
           </h2>
           <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8 w-full mr-2 mb-24 my-custom-rounded">
-            <h3 className="text-xl text-gray-200 font-bold mb-4">
-              P3 - La Poste - Ligne Bleue
+            <h3 className="text-xl text-yellow-500 font-bold mb-4">
+              P3 - La Poste - Ligne Bleue <br></br>Rendre accessible le
+              numérique par l'apprentissage.
             </h3>
+            <img src={poste} alt="" className="w-16 h-16 mx-auto mb-4" />
+
             <p className="text-gray-200 mb-4 md:hover:text-white">
-              Projet de création de site vitrine pour La Poste - Ligne Bleue.
-              Rendre accessible le numérique par l'apprentissage. Stack
-              technique : React, Tailwind, Express, MySql Authentification, user
-              & admin dashboard, fonctionnalités CRUD.
+              <span className="underline font-bold text-2xl uppercase  ">
+                Stack:
+              </span>
             </p>
-            <img src={poste} alt="" className="w-16 h-16 mx-auto" />
+            <p className="text-gray-200 mb-4 md:hover:text-white">
+              <span className=" font-bold text-l   ">
+                React/TailWind/Express/MySql/NodeJs{" "}
+              </span>
+            </p>
+
             <iframe
               className="w-full h-96 my-4"
               src="https://www.loom.com/embed/9df13ebb3b97415aa8820c9612dc9e3f"
@@ -53,16 +60,28 @@ function Projects() {
             </a>
           </div>
           <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 bg-gray-700/70 md:hover:bg-gray-900/80 text-center  text-lg text-courier-new shadow p-6 border rounded-2xl mx-8 w-full mr-2 mb-12 my-custom-rounded">
-            <h3 className="text-xl text-gray-200 font-bold mb-4">
+            <h3 className="text-xl text-yellow-500 font-bold mb-4">
               {" "}
-              P2 - Wild On Track
+              P2 - Wild On Track <br></br> Service de création de carnet de
+              voyage avec les vols, hôtels, restaurants et activités d'un
+              séjour.
             </h3>
+            <img
+              src={wot}
+              alt=""
+              className="w-16 h-16 mx-auto bg-white mb-4 rounded-xl"
+            />
             <p className="text-gray-200 mb-4 md:hover:text-white">
-              Projet réalisé en équipe. Service de création de carnet de voyage
-              comprenant les vols, hôtels, restaurants et activités d'un séjour.
-              Stack technique : ReactJs, Material UI. Utilisation de 3 API.
-            </p>{" "}
-            <img src={wot} alt="" className="w-16 h-16 mx-auto bg-white " />
+              <span className="underline font-bold text-2xl uppercase  ">
+                Stack:
+              </span>
+            </p>
+            <p className="text-gray-200 mb-4 md:hover:text-white">
+              <span className=" font-bold text-l   ">
+                React/MaterialUi/ApiRest
+              </span>
+            </p>
+
             <iframe
               title="video wild on track"
               className="w-full h-96 my-4"
@@ -86,13 +105,23 @@ function Projects() {
             </a>
           </div>
           <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8 w-full mr-2 mb-12 my-custom-rounded">
-            <h3 className="text-xl text-courier-new font-bold mb-4 text-gray-200">
-              P1 - FFK{" "}
+            <h3 className="text-xl text-courier-new font-bold mb-4 text-yellow-500">
+              P1 - FFK Premier projet en équipe
             </h3>
-            <p className="text-courier-new text-gray-200 mb-4 md:hover:text-white">
-              Premier projet réalisé en équipe, avec Html Css et JavaScript.
+            <p className="text-courier-new text-gray-200 mb-4 md:hover:text-white"></p>
+            <img
+              src={nusret}
+              alt=""
+              className="w-16 h-16 mx-auto mb-4 rounded-xl "
+            />
+            <p className="text-gray-200 mb-4 md:hover:text-white">
+              <span className="underline font-bold text-2xl uppercase  ">
+                Stack:
+              </span>
             </p>
-            <img src={nusret} alt="" className="w-16 h-16 mx-auto " />
+            <p className="text-gray-200 mb-4 md:hover:text-white">
+              <span className=" font-bold text-l   ">Html/CSS/JavaScript</span>
+            </p>
             <a
               href="https://musical-ganache-813abc.netlify.app/"
               className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
@@ -107,7 +136,7 @@ function Projects() {
             </a>
           </div>{" "}
           <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8 w-full mr-2 mb-12 my-custom-rounded">
-            <h3 className="text-xl text-courier-new font-bold mb-4 text-gray-200">
+            <h3 className="text-xl text-courier-new font-bold mb-4 text-yellow-500">
               Autres réalisations et apprentissage{" "}
             </h3>
             <p className="text-courier-new text-gray-200 mb-4 md:hover:text-white">
