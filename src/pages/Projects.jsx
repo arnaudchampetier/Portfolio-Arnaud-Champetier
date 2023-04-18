@@ -32,7 +32,7 @@ function Projects() {
             </p>
             <p className="text-gray-200 mb-4 md:hover:text-white">
               <span className=" font-bold text-l   ">
-                React/TailWind/Express/MySql/NodeJs{" "}
+                React/TailWind/Express/<br></br>MySql/NodeJs{" "}
               </span>
             </p>
 
@@ -78,7 +78,7 @@ function Projects() {
             </p>
             <p className="text-gray-200 mb-4 md:hover:text-white">
               <span className=" font-bold text-l   ">
-                React/MaterialUi/ApiRest
+                React/MaterialUi/ApiRest<br></br>NodeJs
               </span>
             </p>
 
