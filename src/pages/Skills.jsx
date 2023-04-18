@@ -1,4 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import Arrow from "../assets/next1.png";
+
 import wave2 from "../assets/deskwork1.jpg";
 import { useState } from "react";
 
@@ -27,12 +30,13 @@ function Skills() {
     },
     {
       title: "En cours d'apprentissage",
-      list: ["PHP", "Java", "VueJs", "TypeScript", "Angular", "..."],
+      list: ["PHP", "Java", "TypeScript", "Angular", "..."],
     },
   ];
 
   return (
     <div
+      id="skills"
       className="h-screen w-full bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{ backgroundImage: `url(${wave2})` }}
     >
@@ -90,6 +94,13 @@ function Skills() {
                 </ul>
               </div>
             </div>
+            <NavLink to="/projects">
+              <img
+                src={Arrow}
+                alt="Scroll to about section"
+                className="w-12 h-12 mx-auto mt-24 md:mb-8 cursor-pointer animate-pulse"
+              />
+            </NavLink>
           </div>
         </div>
       </div>

@@ -1,5 +1,8 @@
 import React from "react";
-import wave2 from "../assets/blueplane.jpg";
+import { NavLink } from "react-router-dom";
+import Arrow from "../assets/next1.png";
+
+import wave2 from "../assets/simpleblack.jpg";
 import pic from "../assets/profilepic3-removebg-preview.png";
 
 function AboutMe() {
@@ -51,7 +54,7 @@ function AboutMe() {
             </ul>
           </div>
 
-          <p className="py-6 text-center mb-24 md:text-xl text-gray-300 w-full mt-4 scale-90 transition duration-1000 ease-in-out transform hover:scale-110">
+          <p className="py-6 text-center mb-8 md:text-xl text-gray-300 w-full mt-4 scale-90 transition duration-1000 ease-in-out transform hover:scale-110">
             Après une école de commerce et un parcours professionnel ponctué
             d'expériences variées notamment dans les achats, le management
             commercial et l'enseignement, j'ai fait le pari de me réorienter
@@ -72,6 +75,13 @@ function AboutMe() {
             j'aime passer du temps dans la nature. J'aime également la
             littérature, la cuisine et le cinéma.
           </p>
+          <NavLink to="/skills">
+            <img
+              src={Arrow}
+              alt="Scroll to about section"
+              className="w-12 h-12 mx-auto mb-24 md:mb-8 cursor-pointer animate-pulse"
+            />
+          </NavLink>
         </div>
       </section>
     </div>
