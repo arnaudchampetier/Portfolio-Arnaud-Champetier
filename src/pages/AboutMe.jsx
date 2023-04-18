@@ -14,9 +14,11 @@ function AboutMe() {
       <h1 className="scale-90 transition duration-1000 ease-in-out transform hover:scale-105 md:text-4xl text-3xl font-bold text-gray-300 text-center mt-8 md:mt-16 md:mb-8 md:text-center md:absolute md:top-0 md:w-full">
         Qui suis-je?
       </h1>
+
       <h1 className="scale-90 animate-pulse transition duration-1000 ease-in-out transform hover:scale-105 mb-2 mt-2 md:text-2xl text-xl font-bold text-gray-100 text-center md:mt-32 md:text-center md:absolute md:top-0 md:w-full">
         Mieux me connaître{" "}
       </h1>
+
       <img
         src={pic}
         alt="Ma pic"
