@@ -3,6 +3,7 @@ import nusret from "../assets/nusret.jpg";
 import wot from "../assets/wotlogo.png";
 import wave2 from "../assets/projects5.jpg";
 import poste from "../assets/P3.png";
+import maria from "../assets/logomaria2.png";
 
 function Projects() {
   return (
@@ -18,6 +19,47 @@ function Projects() {
           <h2 className="text-3xl md:text-5xl animate-pulse text-center text-courier-new text-gray-800  my-custom-rounded  mt-24 font-bold mb-24  md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-110">
             Projets
           </h2>
+          <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8 w-full mr-2 mb-24 my-custom-rounded">
+            <h3 className="text-xl text-yellow-500 font-bold mb-4">
+              Projet freelance - Chez Maria <br></br>Epicerie ardéchoise à Lyon
+            </h3>
+            <img src={maria} alt="" className="w-16 h-16 mx-auto mb-4" />
+
+            <p className="text-gray-200 mb-4 md:hover:text-white">
+              <span className="underline font-bold text-2xl uppercase  ">
+                Stack:
+              </span>
+            </p>
+            <p className="text-gray-200 mb-4 md:hover:text-white">
+              <span className=" font-bold text-l   ">
+                React/TailWind<br></br>
+                <br></br>NodeJs{" "}
+              </span>
+            </p>
+
+            <iframe
+              className="w-full h-96 my-4"
+              src="https://www.loom.com/embed/f74ba70b7c8c4ba591c5cb8e1a35a783"
+              title="video Chez Maria version Desktop"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>
+
+            <a
+              href="https://chezmaria.vercel.app/"
+              className="inline-block px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
+            >
+              En savoir plus
+            </a>
+            <a
+              href="https://github.com/arnaudchampetier/chezmaria"
+              className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
+            >
+              GitHub du projet
+            </a>
+          </div>
           <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8 w-full mr-2 mb-24 my-custom-rounded">
             <h3 className="text-xl text-yellow-500 font-bold mb-4">
               P3 - La Poste - Ligne Bleue <br></br>Rendre accessible le
