@@ -6,178 +6,112 @@ import poste from "../assets/P3.png";
 import maria from "../assets/logomaria2.png";
 
 function Projects() {
+  const projects = [
+    {
+      id: 1,
+      title: "Projet freelance - Chez Maria Epicerie ardéchoise à Lyon",
+      image: maria,
+      stack: "React/TailWind, NodeJs",
+      videoUrl: "https://www.loom.com/embed/f74ba70b7c8c4ba591c5cb8e1a35a783",
+      websiteUrl: "https://chezmaria.vercel.app/",
+      githubUrl: "https://github.com/arnaudchampetier/chezmaria",
+    },
+    {
+      id: 2,
+      title:
+        "P3 - La Poste - Ligne Bleue Rendre accessible le numérique par l'apprentissage.",
+      image: poste,
+      stack: "React/TailWind, Express/MySql, NodeJs",
+      videoUrl: "https://www.loom.com/embed/9df13ebb3b97415aa8820c9612dc9e3f",
+      websiteUrl: "https://laposte.lyon-2.wilders.dev/",
+      githubUrl:
+        "https://github.com/WildCodeSchool/P3_La-Poste_Lyon_React_Sept_2022",
+    },
+    {
+      id: 3,
+      title:
+        "P2 - Wild On Track Service de création de carnet de voyage avec les vols, hôtels, restaurants et activités d'un séjour.",
+      image: wot,
+      stack: "React/MaterialUi, ApiRest/NodeJs",
+      videoUrl: "https://www.loom.com/embed/99d0b6c469924bec9dfb79f2f343d5c5",
+      websiteUrl: "https://wildontrack.netlify.app/",
+      githubUrl:
+        "https://github.com/WildCodeSchool/P2_Wild-On-Track_Lyon-React-Sept-2022",
+    },
+    {
+      id: 4,
+      title: "P1 - FFK Premier projet en équipe",
+      image: nusret,
+      stack: "Html/CSS/JavaScript",
+      videoUrl: "https://www.youtube.com/embed/xxxxx",
+      websiteUrl: "https://example.com",
+      githubUrl: "https://github.com/example",
+    },
+  ];
+
   return (
-    <div
-      className=" h-screen w-screen bg-cover bg-center bg-no-repeat overflow-scroll"
-      style={{ backgroundImage: `url(${wave2})` }}
-    >
-      <div className=" flex flex-col ">
-        <section
-          id="projects"
-          className="mb-4 w-2/3 md:w-1/3  flex flex-col items-center mx-auto my-auto  justify-center my-custom-rounded "
-        >
-          <h2 className="text-3xl md:text-5xl animate-pulse text-center text-courier-new text-gray-800  my-custom-rounded  mt-24 font-bold mb-24  md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-110">
-            Projets
-          </h2>
-          <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8 w-full mr-2 mb-24 my-custom-rounded">
-            <h3 className="text-xl text-yellow-500 font-bold mb-4">
-              Projet freelance - Chez Maria <br></br>Epicerie ardéchoise à Lyon
-            </h3>
-            <img src={maria} alt="" className="w-16 h-16 mx-auto mb-4" />
+    <div>
+      <div
+        className="h-screen w-screen bg-cover bg-center bg-no-repeat overflow-scroll"
+        style={{ backgroundImage: `url(${wave2})` }}
+      >
+        <h2 className="text-3xl md:text-5xl animate-pulse text-center text-courier-new text-gray-800  my-custom-rounded  mt-24 font-bold mb-24  md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-110">
+          Projets
+        </h2>
+        <section className="flex flex-col items-center justify-center mx-auto w-3/4 lg:w-screen">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="md:w-2/3 lg:w-2/3 xl:w-1/2 2xl:w-1/3 md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new p-6 border rounded-2xl mx-8 w-full mr-2 mb-24 my-custom-rounded"
+            >
+              <h3 className="text-xl text-yellow-500 font-bold mb-4">
+                {project.title}
+              </h3>
+              <img
+                src={project.image}
+                alt=""
+                className="w-16 h-16 mx-auto mb-4"
+              />
 
-            <p className="text-gray-200 mb-4 md:hover:text-white">
-              <span className="underline font-bold text-2xl uppercase  ">
-                Stack:
-              </span>
-            </p>
-            <p className="text-gray-200 mb-4 md:hover:text-white">
-              <span className=" font-bold text-l   ">
-                React/TailWind<br></br>
-                <br></br>NodeJs{" "}
-              </span>
-            </p>
+              <p className="text-gray-200 mb-4 md:hover:text-white">
+                <span className="underline font-bold text-2xl uppercase">
+                  Stack:
+                </span>
+              </p>
+              <p className="text-gray-200 mb-4 md:hover:text-white">
+                <span className="font-bold text-l">
+                  {project.stack.split("<br></br>").map((item, index) => (
+                    <React.Fragment key={index}>
+                      {item}
+                      <br></br>
+                    </React.Fragment>
+                  ))}
+                </span>
+              </p>
 
-            <iframe
-              className="w-full h-96 my-4"
-              src="https://www.loom.com/embed/f74ba70b7c8c4ba591c5cb8e1a35a783"
-              title="video Chez Maria version Desktop"
-              frameborder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowfullscreen
-            ></iframe>
+              <iframe
+                className="w-full h-96 my-4"
+                src={project.videoUrl}
+                title={`video ${project.title}`}
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
 
-            <a
-              href="https://chezmaria.vercel.app/"
-              className="inline-block px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
-            >
-              En savoir plus
-            </a>
-            <a
-              href="https://github.com/arnaudchampetier/chezmaria"
-              className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
-            >
-              GitHub du projet
-            </a>
-          </div>
-          <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8 w-full mr-2 mb-24 my-custom-rounded">
-            <h3 className="text-xl text-yellow-500 font-bold mb-4">
-              P3 - La Poste - Ligne Bleue <br></br>Rendre accessible le
-              numérique par l'apprentissage.
-            </h3>
-            <img src={poste} alt="" className="w-16 h-16 mx-auto mb-4" />
-
-            <p className="text-gray-200 mb-4 md:hover:text-white">
-              <span className="underline font-bold text-2xl uppercase  ">
-                Stack:
-              </span>
-            </p>
-            <p className="text-gray-200 mb-4 md:hover:text-white">
-              <span className=" font-bold text-l   ">
-                React/TailWind<br></br>Express/MySql<br></br>NodeJs{" "}
-              </span>
-            </p>
-
-            <iframe
-              className="w-full h-96 my-4"
-              src="https://www.loom.com/embed/9df13ebb3b97415aa8820c9612dc9e3f"
-              title="video ligne bleue"
-              frameborder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowfullscreen
-            ></iframe>
-
-            <a
-              href="https://laposte.lyon-2.wilders.dev/"
-              className="inline-block px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
-            >
-              En savoir plus
-            </a>
-            <a
-              href="https://github.com/WildCodeSchool/P3_La-Poste_Lyon_React_Sept_2022"
-              className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
-            >
-              GitHub du projet
-            </a>
-          </div>
-          <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 bg-gray-700/70 md:hover:bg-gray-900/80 text-center  text-lg text-courier-new shadow p-6 border rounded-2xl mx-8 w-full mr-2 mb-12 my-custom-rounded">
-            <h3 className="text-xl text-yellow-500 font-bold mb-4">
-              {" "}
-              P2 - Wild On Track <br></br> Service de création de carnet de
-              voyage avec les vols, hôtels, restaurants et activités d'un
-              séjour.
-            </h3>
-            <img
-              src={wot}
-              alt=""
-              className="w-16 h-16 mx-auto bg-white mb-4 rounded-xl"
-            />
-            <p className="text-gray-200 mb-4 md:hover:text-white">
-              <span className="underline font-bold text-2xl uppercase  ">
-                Stack:
-              </span>
-            </p>
-            <p className="text-gray-200 mb-4 md:hover:text-white">
-              <span className=" font-bold text-l   ">
-                React/MaterialUi<br></br>ApiRest/NodeJs
-              </span>
-            </p>
-
-            <iframe
-              title="video wild on track"
-              className="w-full h-96 my-4"
-              src="https://www.loom.com/embed/99d0b6c469924bec9dfb79f2f343d5c5"
-              frameborder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowfullscreen
-            ></iframe>
-            <a
-              href="https://github.com/WildCodeSchool/P2_Wild-On-Track_Lyon-React-Sept-2022"
-              className="inline-block px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80  animate-pulse "
-            >
-              En savoir plus
-            </a>
-            <a
-              href="https://github.com/WildCodeSchool/P2_Wild-On-Track_Lyon-React-Sept-2022"
-              className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-xl md:hover:bg-green-500/80 animate-pulse"
-            >
-              GitHub du projet
-            </a>
-          </div>
-          <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8 w-full mr-2 mb-12 my-custom-rounded">
-            <h3 className="text-xl text-courier-new font-bold mb-4 text-yellow-500">
-              P1 - FFK Premier projet en équipe
-            </h3>
-            <p className="text-courier-new text-gray-200 mb-4 md:hover:text-white"></p>
-            <img
-              src={nusret}
-              alt=""
-              className="w-16 h-16 mx-auto mb-4 rounded-xl "
-            />
-            <p className="text-gray-200 mb-4 md:hover:text-white">
-              <span className="underline font-bold text-2xl uppercase  ">
-                Stack:
-              </span>
-            </p>
-            <p className="text-gray-200 mb-4 md:hover:text-white">
-              <span className=" font-bold text-l   ">Html/CSS/JavaScript</span>
-            </p>
-            <a
-              href="https://musical-ganache-813abc.netlify.app/"
-              className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
-            >
-              En savoir plus
-            </a>
-            <a
-              href="https://github.com/ChaiDaryl/Project_Samourai"
-              className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
-            >
-              GitHub du projet
-            </a>
-          </div>{" "}
-          <div className="md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8 w-full mr-2 mb-12 my-custom-rounded">
+              <a
+                href={project.websiteUrl}
+                className="inline-block px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
+              >
+                En savoir plus
+              </a>
+              <a
+                href={project.githubUrl}
+                className="inline-block text-courier-new px-4 py-2 font-semibold text-gray-200 rounded-full md:hover:bg-green-500/80 animate-pulse"
+              >
+                GitHub du projet
+              </a>
+            </div>
+          ))}
+          <div className="w-full md:w-2/3 lg:w-2/3 xl:w-1/2 2xl:w-1/3 md:scale-90 md:transition md:duration-1000 md:ease-in-out md:transform md:hover:scale-105 shadow-md bg-gray-700/70 md:hover:bg-gray-900/80 text-center text-lg text-courier-new  p-6 border rounded-2xl mx-8  mr-2 mb-24 my-custom-rounded">
             <h3 className="text-xl text-courier-new font-bold mb-4 text-yellow-500">
               Autres réalisations et apprentissage{" "}
             </h3>
