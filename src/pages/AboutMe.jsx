@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Arrow from "../assets/next1.png";
 
 import wave2 from "../assets/simpleblack.jpg";
-import pic from "../assets/profilepic3-removebg-preview.png";
+import pic from "../assets/meuah1.jpg";
 
 function AboutMe() {
   return (
@@ -57,25 +57,13 @@ function AboutMe() {
           </div>
 
           <p className="py-6 text-center mb-8 md:text-xl text-gray-300 w-full mt-4 scale-90 transition duration-1000 ease-in-out transform hover:scale-110">
-            Après une école de commerce et un parcours professionnel ponctué
-            d'expériences variées notamment dans les achats, le management
-            commercial et l'enseignement, j'ai fait le pari de me réorienter
-            dans le développement Web en suivant une formation intensive de
-            développeur web & web mobile à la Wild Code School de Lyon.{" "}
-            <br></br> <br></br>
-            Passionné par les nouvelles technologies, j'ai choisi de me
-            professionnaliser dans ce domaine. Fort de mes expériences passées,
-            je saurais allier mes anciennes compétences à mes nouvelles pour les
-            bonifier. <br></br>
-            <br></br>Je suis une personne passionnée et motivée, toujours à la
-            recherche de nouvelles expériences et de défis à relever. J'aime
-            travailler en équipe et apporter ma contribution à la réalisation de
-            projets ambitieux.
-            <br></br>
-            <br></br> En dehors du travail, je suis un passionné de sport
-            (surtout de football et de l'Olympique Lyonnais!) et de voyages, et
-            j'aime passer du temps dans la nature. J'aime également la
-            littérature, la cuisine et le cinéma.
+            Après une école de commerce et un parcours professionnel varié, j'ai
+            suivi une formation intensive de développeur web & web mobile à la
+            Wild Code School de Lyon. Passionné par les nouvelles technologies,
+            j'ai choisi de me professionnaliser dans ce domaine. Je suis une
+            personne passionnée et motivée, toujours à la recherche de nouvelles
+            expériences et de défis à relever. J'aime travailler en équipe et
+            apporter ma contribution à la réalisation de projets ambitieux.
           </p>
           <NavLink to="/skills">
             <img
